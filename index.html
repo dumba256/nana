@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KEEM TECHNOLOGIES</title>
+    <link rel="icon" type="image/jpg" href="./pictures/icon 6.jpg" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <script src="./bootstrap/js/bootstrap.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/b3399ea4e5.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./fonts/css/all.css" />
+    <script src="https://use.fontawesome.com/3bce97327d.js" defer></script>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <a href="goback.html">Thank You Page</a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <style>
+      #nav_bar {
+          background-color: black !important;
+      }
+
+      #nav_bar .nav-link, 
+      #nav_bar .navbar-brand, 
+      #nav_bar .apply {
+          color: white !important;
+      }
+
+      #nav_bar .nav-link:hover {
+          color: grey; /* Optional: To add a hover effect */
+      }
+  </style>
+  </head>
+  <body>
+
+<header>
+    <section
+      class="container-fluid navbar navbar-expand-lg bg-body-tertiary justify-content-around align-items-center fixed-top"
+      id="nav_bar"
+    >
+      <div class="">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./pictures/t logo 3.jpg"
+            alt="jwojwo_logo"
+            class="img-fluid"
+            width="100px"
+            height="100px"
+            
+          />
+        </a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button
+            class="navbar-toggler p-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i style="font-size: 30px" class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+              <li class="nav-item text-center">
+                <a class="nav-link active fw-bold fs-10 nav-dropper" href="services.html"
+                  >Services</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link active fw-bold fs-10" href="About us.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item text-center" id="contact">
+                <a class="nav-link active fw-bold fs-10" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <a href="signup.html" class="text-decoration-none">
+        <button
+          class="apply btn fw-bold d-none d-lg-block"
+          style="width: 150px"
+        >
+          Apply Now
+        </button>
+      </a>
+    </section>
+    </header>
+    <!-- end of navbar -->
+
+    <section id="hero">
+        <video autoplay loop muted playsinline>
+            <source src="./pictures/wantagwan.webm" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <h1 class="text-white fw-bold text-sm-center slide-in">
+                KEEM TECHNOLOGIES
+              </h1>
+            <p>We innovate. We deliver. We transform.</p>
+        </div>
+    </section>
+
+    
+     
+    <!-- end of KEEM page -->
+    <section>
+      <div class="row modules d-flex justify-content-center align-items-center">
+        <h1 class="fw-bold text-sm-center text00 mt-3 mb-3" style="color: orangered">
+          OUR SERVICES
+        </h1>
+      </div>
+    </section>
+    <section class="container-fluid p-3  d-flex gap-3 g-3 flex-column justify-content-center justify-content-between align-items-center" id="modules_section">
+      <div class="container module row g-4 d-md-flex justify-content-center justify-content-between pt-5 pb-5">
+        <div class="modules_cards col-3 card text-white text-center" style="width: 358px; height: auto">
+          <div class="card-body">
+            <h2 class="fw-bold card-title mt-2 paragraph_slide">WEB DEVELOPMENT</h2>
+            <p class="card-text paragraph_slide small_text text-start" style="font-size: 20px" id="cardContent">
+              Our web development services cover a wide range of expertise, from front-end design to back-end development, ensuring your website is both visually appealing and fully functional.
+            </p>
+            <button type="button" class="btn btn-light text-orange btn-md" id="read_more">
+              READ MORE
+            </button>
+          </div>
+        </div>
+    
+        <div class="modules_cards col-3 card text-white text-center" style="width: 358px; height: auto">
+          <div class="card-body">
+            <h5 class="fw-bold card-title paragraph_slide">SOFTWARE DEVELOPMENT</h2>
+            <p class="card-text paragraph_slide small_text text-start" style="font-size: 20px" id="cardContent2">
+              We specialize in software development, crafting custom solutions tailored to your business needs, whether it's a mobile app, desktop software, or enterprise solution.
+            </p>
+            <button type="button" class="btn btn-light text-orange btn-md" id="read_more2">
+              READ MORE
+            </button>
+          </div>
+        </div>
+    
+        <div class="modules_cards col-3 card text-white text-center" style="width: 358px; height: auto">
+          <div class="card-body">
+            <h5 class="fw-bold card-title mt-2 paragraph_slide">IT CONSULTING</h2>
+            <p class="card-text paragraph_slide small_text text-start" style="font-size: 20px" id="cardContent3">
+              Our IT consulting services provide expert guidance on technology strategy, implementation, and optimization, helping your business leverage the latest innovations effectively.
+            </p>
+            <button type="button" class="btn btn-light text-orange btn-md" id="read_more3">
+              READ MORE
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About KEEM TECHNOLOGIES -->
+    <section class="container-fluid d-flex about p-5 col-sm-12" id="about_section">
+      <div class="left_image position-relative flex-start p-5">
+        <div class="col-10 right_text text-dark p-5">
+          <h1 class="fw-bold about_title" style="color: orangered">ABOUT KEEM TECHNOLOGIES</h1>
+          <p class="paragraph_slide small_text" style="font-size: 20px">
+            At KEEM TECHNOLOGIES, we're passionate about leveraging technology to solve real-world problems and drive innovation. From cutting-edge software solutions to user-friendly websites, we're dedicated to delivering exceptional results for our clients.
+          </p>
+          <p class="paragraph_slide small_text" style="font-size: 20px">
+            Our team of skilled professionals combines creativity with technical expertise to bring your ideas to life. Whether you're a startup looking to establish your online presence or an established enterprise seeking to optimize your digital operations, we're here to help you succeed.
+          </p>
+          <p class="paragraph_slide small_text" style="font-size: 20px">
+            With a focus on quality, innovation, and customer satisfaction, we strive to be a trusted partner for all your technology needs. Contact us today to learn more about how we can transform your business through technology.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Why Choose KEEM TECHNOLOGIES -->
+    <section class="text-white upti col-sm-12 ">
+      <div class="container-fluid row upti_about m-0 p-5">
+        <div class="container mb-2">
+
+          <h1 class="fw-bold title text-center text00" style="color: orangered">
+            WHY CHOOSE KEEM TECHNOLOGIES?
+          </h1>
+          <ul class="text text-start upti_list small_text" style="font-size: 20px">
+            <li class="fade-in">
+              Expertise in a wide range of technology services.
+            </li>
+            <li class="fade-in">
+              Customized solutions tailored to your specific needs.
+            </li>
+            <li class="fade-in">
+              Dedication to quality, innovation, and customer satisfaction.
+            </li>
+          </ul>
+        </div>
+        <div class="container px-2">
+          <h1 class="fw-bold title text-center text00" style="color: orangered">
+            TECHNOLOGY CAREERS
+          </h1>
+          <div class="text text-start fade-in small_text" style="font-size: 20px">
+            Explore career opportunities in the technology industry with JWOJWO TECHNOLOGIES. We're committed to fostering talent and empowering individuals to thrive in a dynamic and fast-paced environment.
+          </div>
+          <div class="text text-start small_text" style="font-size: 20px">
+            <p class="fade-in">
+              Joining KEEM TECHNOLOGIES means being part of a team that values innovation, collaboration, and excellence. Whether you're an experienced professional or just starting your career, we offer exciting opportunities for growth and development.
+            </p>
+            <p class="fade-in">
+              With a focus on diversity, inclusivity, and continuous learning, we provide a supportive environment where you can achieve your full potential. Join us and be part of our journey to shape the future of technology.
+            </p>
+          </div>
+          <div class="text-start small_text">
+            <p style="font-size: 20px" class="fade-in">
+              Ready to take the next step in your technology career? Explore our current openings and start your journey with JWOJWO TECHNOLOGIES today.
+            </p>
+            <p style="color: orangered; font-size: 22px" class="fade-in">
+              Join our team and be at the forefront of innovation in the technology industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- end of "why choose KEEM technologies" -->
+
+    <section class="container-fluid p-3 col-sm-12 " style="color: orangered">
+      <h2 class="text-center text00">
+        Featured Technologies and Solutions
+      </h2>
+      <div class="image_div p-2 mt-4 gap-4 mb-6">
+        <div class="d-flex justify-content-center ">
+          <img class="img-fluid img2" src="./pictures/icon 1.jpg" alt="Web Development" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img class="img-fluid img2" src="./pictures/icon 2.jpg" alt="Software Development" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img class="img-fluid img2" src="./pictures/icon 3.jpg" alt="IT Consulting" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img class="img-fluid img2" src="./pictures/icon 4.jpg" alt="Cloud Computing" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img class="img-fluid img2" src="./pictures/icon 5.jpg" alt="Data Analytics" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img class="img-fluid img2" src="./pictures/icon 3.jpg" alt="Data Analytics" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img class="img-fluid img2" src="./pictures/icon 5.jpg" alt="Data Analytics" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img class="img-fluid img2" src="./pictures/icon 6.jpg" alt="Cyber Security" />
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="container-fluid applySection pb-5" id="contact">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-md-6 col-sm-10 p-5 gap-2 d-flex flex-column justify-content-center">
+            <h2 class="text-center fw-bold" style="color: orangered">CONTACT US</h2>
+            <form class="mb-4 d-flex flex-column gap-3 small_text" style="font-size: 20px"  id="myForm" onsubmit="handleFormSubmit(event)">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter your first Name" required />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="secondName">Last Name</label>
+                    <input type="text" id="secondName" name="secondName" placeholder="Enter your last Name" class="form-control" required />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="user-email">E-mail</label>
+                <input type="email" id="user-email" name="user-email" placeholder="Email Address" class="form-control" required />
+              </div>
+              <div class="row mb-4">
+                <div class="col-sm-3">
+                  <div class="form-group">
+                    <label for="country-code">Country</label>
+                    <input type="text" id="country-code" name="country-code" placeholder="Country-code" class="form-control" required />
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" name="phone" placeholder="Phone Number" class="form-control" required />
+                  </div>
+                </div>
+              </div>
+             <a href="./thankyou.html"> <button class="btn align-self-center" type="submit" style="width: 200px; background-color: orangered; color: #fff">Submit</button></a>
+            </form>
+          </div>
+          <div class="encouragement00 col-md-6 col-sm-10 p-5 text-center d-flex align-items-center">
+            <span class="paragragh_black font-italic text-white paragraph_slide fw-bold encouragement" style="font-size: 50px; line-height: 1.1">
+              "LET'S BUILD THE FUTURE TOGETHER WITH KEEM TECHNOLOGIES!"
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <section class="container-fluid footer d-flex flex-column align-items-center justify-content-center bg-dark" id="footer">
+      <div class="container div_footer row d-flex justify-content-between mt-2 pt-3 pb-3">
+        <div class="odyssey_footer col-4 d-flex flex-column gap-2 justify-content-around" id="odyssey">
+          <h3 class="fw-bold"  style="color: orangered">KEEM TECHNOLOGIES</h3>
+          <ul class="text-start small_text">
+            <li style="font-size: 20px" class="text-white">Located at kawempe </li>
+            <li style="font-size: 20px" class="text-white">We're here to revolutionize technology.</li>
+            <li style="font-size: 20px" class="text-white">Working Hours: 24/7</li>
+          </ul>
+        </div>
+        <div class="contact_footer col-4 text-center d-flex flex-column gap-1 justify-content-around">
+          <h3 class="fw-bold"  style="color: orangered">CONTACT US</h3>
+          <p style="font-size: 20px" class="small_text text-white">
+            <span>TEL: +256 751424275</span>&nbsp;
+          </p>
+          <p style="font-size: 20px" class="small_text text-white">
+            <span>EMAIL:</span>&nbsp;<span>info@keem.com</span>
+          </p>
+          <div class="d-flex justify-content-evenly">
+            <a href="#" class="text-decoration-none">
+              <i class="fab fa-instagram text-decoration-none" style="font-size: 20px; color: orangered"></i>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <i class="fab fa-facebook text-decoration-none" style="font-size: 20px; color: orangered"></i>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <i class="fab fa-twitter text-decoration-none" style="font-size: 20px; color: orangered"></i>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <i class="fab fa-linkedin text-decoration-none" style="font-size: 20px; color: orangered"></i>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <i class="fab fa-youtube text-decoration-none" style="font-size: 20px; color: orangered"></i>
+            </a>
+          </div>
+        </div>
+        <div class="faqs_footer col-4 d-flex text-center gap-2 justify-content-around">
+          <div>
+            <a href="#"> <h3 class="fw-bold" style="color: orangered">FAQS</h3></a>
+            
+           
+            <div id="information">
+              <!-- Additional information will be displayed here -->
+              <ul class="text-start small_text" style="font-size: 18px">
+                <li class="text-white" onclick="showInformation('private')">Is KEEM TECHNOLOGIES a private company?</li>
+                <li class="text-white" onclick="showInformation('location')">Where is KEEM TECHNOLOGIES located?</li>
+                <li class="text-white" onclick="showInformation('cost')">Are the services provided by KEEM TECHNOLOGIES free or paid?</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#">
+            <i class="fas fa-home align-self-center" style="font-size: 40px; color: orangered"></i>
+          </a>
+        </div>
+        <p class="text-center mb-0 mt-4 small_text text-white" style="font-size: 20px">
+          Copyright©2024 KEEM TECHNOLOGIES. All rights reserved.
+        </p>
+      </div>
+      
+    </section>
+    
+  </body>
+</html>
