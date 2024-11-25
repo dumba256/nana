@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridex Motors Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Ridex Motors</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="signup-container">
+            <form class="signup-form">
+                <h2>Signup for Ridex Motors</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="license">Driver's License Number</label>
+                        <input type="text" id="license" name="license" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle">Vehicle Type</label>
+                        <input type="text" id="vehicle" name="vehicle" required>
+                    </div>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <footer>
+            <div>
+                <h3 class="fw-bold"  style="color: deeppink">RIDEX MOTORS</h3>
+                <ul class="text-start small_text">
+                  <li style="font-size: 20px" class="text-white">Located at Lubaga </li>
+                  <li style="font-size: 20px" class="text-white">We're here to revolutionize your drive.</li>
+                  <li style="font-size: 20px" class="text-white">Working Hours: 24/7</li>
+                </ul>
+            </div>
+           
+              <div class="contact_footer col-4 text-center d-flex flex-column gap-1 justify-content-around">
+                <h3 class="fw-bold"  style="color: deeppink">CONTACT US</h3>
+                <p style="font-size: 20px" class="small_text text-white">
+                  <span>TEL: +256 750293512</span>&nbsp;
+                </p>
+                <p style="font-size: 20px" class="small_text text-white">
+                  <span>EMAIL:</span>&nbsp;<span>info@irene.com</span>
+                </p>
+    
+                </div>
+                <div id="information">
+                    <!-- Additional information will be displayed here -->
+                    <h3 class="fw-bold"  style="color: deeppink">FAQs</h3>
+                    <ul class="text-start small_text" style="font-size: 18px">
+                      <li class="text-white" onclick="showInformation('private')">Is Ridex motors a private company?</li>
+                      <li class="text-white" onclick="showInformation('location')">Where is Ridex Motors located?</li>
+                      <li class="text-white" onclick="showInformation('cost')">Are the services provided by Shammie Medicals free or paid?</li>
+                    </ul>
+                  </div>
+        </footer>
+
+    </main>
+</body>
+</html>

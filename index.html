@@ -1,381 +1,1001 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KEEM TECHNOLOGIES</title>
-    <link rel="icon" type="image/jpg" href="./pictures/icon 6.jpg" />
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
-    <script src="./bootstrap/js/bootstrap.js" defer></script>
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/b3399ea4e5.css"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./fonts/css/all.css" />
-    <script src="https://use.fontawesome.com/3bce97327d.js" defer></script>
-    <script src="./app.js" defer></script>
-    <link rel="stylesheet" href="./styles.css" />
-    <a href="goback.html">Thank You Page</a>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <style>
-      #nav_bar {
-          background-color: black !important;
-      }
 
-      #nav_bar .nav-link, 
-      #nav_bar .navbar-brand, 
-      #nav_bar .apply {
-          color: white !important;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridex - Rent your favourite car</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
 
-      #nav_bar .nav-link:hover {
-          color: grey; /* Optional: To add a hover effect */
-      }
-  </style>
-  </head>
-  <body>
+<body>
+  <header class="header" data-header>
+    <div class="container">
 
-<header>
-    <section
-      class="container-fluid navbar navbar-expand-lg bg-body-tertiary justify-content-around align-items-center fixed-top"
-      id="nav_bar"
-    >
-      <div class="">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./pictures/t logo 3.jpg"
-            alt="jwojwo_logo"
-            class="img-fluid"
-            width="100px"
-            height="100px"
-            
-          />
-        </a>
-      </div>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <button
-            class="navbar-toggler p-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i style="font-size: 30px" class="fas fa-bars"></i>
-          </button>
+      <div class="overlay" data-overlay></div>
 
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
-              <li class="nav-item text-center">
-                <a class="nav-link active fw-bold fs-10 nav-dropper" href="services.html"
-                  >Services</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link active fw-bold fs-10" href="About us.html"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-item text-center" id="contact">
-                <a class="nav-link active fw-bold fs-10" href="#contact"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+      <a href="signup.html" class="logo">
+        <img src="./assets/images/logo.svg" alt="Ridex logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Explore cars</a>
+          </li>
+
+          <li>
+            <a href="signup.html" class="navbar-link" data-nav-link>Sign up</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+        </ul>
       </nav>
 
-      <a href="signup.html" class="text-decoration-none">
-        <button
-          class="apply btn fw-bold d-none d-lg-block"
-          style="width: 150px"
-        >
-          Apply Now
+      <div class="header-actions">
+
+        <div class="header-contact">
+          <a href="tel:88002345678" class="contact-link">8 800 234 56 78</a>
+
+          <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore cars</span>
+        </a>
+
+        <a href="#" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
         </button>
-      </a>
-    </section>
-    </header>
-    <!-- end of navbar -->
 
-    <section id="hero">
-        <video autoplay loop muted playsinline>
-            <source src="./pictures/wantagwan.webm" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <article>
+      <section class="section hero" id="home">
         <div class="container">
-            <h1 class="text-white fw-bold text-sm-center slide-in">
-                KEEM TECHNOLOGIES
-              </h1>
-            <p>We innovate. We deliver. We transform.</p>
-        </div>
-    </section>
 
-    
-     
-    <!-- end of KEEM page -->
-    <section>
-      <div class="row modules d-flex justify-content-center align-items-center">
-        <h1 class="fw-bold text-sm-center text00 mt-3 mb-3" style="color: orangered">
-          OUR SERVICES
-        </h1>
-      </div>
-    </section>
-    <section class="container-fluid p-3  d-flex gap-3 g-3 flex-column justify-content-center justify-content-between align-items-center" id="modules_section">
-      <div class="container module row g-4 d-md-flex justify-content-center justify-content-between pt-5 pb-5">
-        <div class="modules_cards col-3 card text-white text-center" style="width: 358px; height: auto">
-          <div class="card-body">
-            <h2 class="fw-bold card-title mt-2 paragraph_slide">WEB DEVELOPMENT</h2>
-            <p class="card-text paragraph_slide small_text text-start" style="font-size: 20px" id="cardContent">
-              Our web development services cover a wide range of expertise, from front-end design to back-end development, ensuring your website is both visually appealing and fully functional.
-            </p>
-            <button type="button" class="btn btn-light text-orange btn-md" id="read_more">
-              READ MORE
-            </button>
-          </div>
-        </div>
-    
-        <div class="modules_cards col-3 card text-white text-center" style="width: 358px; height: auto">
-          <div class="card-body">
-            <h5 class="fw-bold card-title paragraph_slide">SOFTWARE DEVELOPMENT</h2>
-            <p class="card-text paragraph_slide small_text text-start" style="font-size: 20px" id="cardContent2">
-              We specialize in software development, crafting custom solutions tailored to your business needs, whether it's a mobile app, desktop software, or enterprise solution.
-            </p>
-            <button type="button" class="btn btn-light text-orange btn-md" id="read_more2">
-              READ MORE
-            </button>
-          </div>
-        </div>
-    
-        <div class="modules_cards col-3 card text-white text-center" style="width: 358px; height: auto">
-          <div class="card-body">
-            <h5 class="fw-bold card-title mt-2 paragraph_slide">IT CONSULTING</h2>
-            <p class="card-text paragraph_slide small_text text-start" style="font-size: 20px" id="cardContent3">
-              Our IT consulting services provide expert guidance on technology strategy, implementation, and optimization, helping your business leverage the latest innovations effectively.
-            </p>
-            <button type="button" class="btn btn-light text-orange btn-md" id="read_more3">
-              READ MORE
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- About KEEM TECHNOLOGIES -->
-    <section class="container-fluid d-flex about p-5 col-sm-12" id="about_section">
-      <div class="left_image position-relative flex-start p-5">
-        <div class="col-10 right_text text-dark p-5">
-          <h1 class="fw-bold about_title" style="color: orangered">ABOUT KEEM TECHNOLOGIES</h1>
-          <p class="paragraph_slide small_text" style="font-size: 20px">
-            At KEEM TECHNOLOGIES, we're passionate about leveraging technology to solve real-world problems and drive innovation. From cutting-edge software solutions to user-friendly websites, we're dedicated to delivering exceptional results for our clients.
-          </p>
-          <p class="paragraph_slide small_text" style="font-size: 20px">
-            Our team of skilled professionals combines creativity with technical expertise to bring your ideas to life. Whether you're a startup looking to establish your online presence or an established enterprise seeking to optimize your digital operations, we're here to help you succeed.
-          </p>
-          <p class="paragraph_slide small_text" style="font-size: 20px">
-            With a focus on quality, innovation, and customer satisfaction, we strive to be a trusted partner for all your technology needs. Contact us today to learn more about how we can transform your business through technology.
-          </p>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Why Choose KEEM TECHNOLOGIES -->
-    <section class="text-white upti col-sm-12 ">
-      <div class="container-fluid row upti_about m-0 p-5">
-        <div class="container mb-2">
+          <div class="hero-content">
+            <h2 class="h1 hero-title">The easy way to takeover a lease</h2>
 
-          <h1 class="fw-bold title text-center text00" style="color: orangered">
-            WHY CHOOSE KEEM TECHNOLOGIES?
-          </h1>
-          <ul class="text text-start upti_list small_text" style="font-size: 20px">
-            <li class="fade-in">
-              Expertise in a wide range of technology services.
-            </li>
-            <li class="fade-in">
-              Customized solutions tailored to your specific needs.
-            </li>
-            <li class="fade-in">
-              Dedication to quality, innovation, and customer satisfaction.
-            </li>
-          </ul>
-        </div>
-        <div class="container px-2">
-          <h1 class="fw-bold title text-center text00" style="color: orangered">
-            TECHNOLOGY CAREERS
-          </h1>
-          <div class="text text-start fade-in small_text" style="font-size: 20px">
-            Explore career opportunities in the technology industry with JWOJWO TECHNOLOGIES. We're committed to fostering talent and empowering individuals to thrive in a dynamic and fast-paced environment.
-          </div>
-          <div class="text text-start small_text" style="font-size: 20px">
-            <p class="fade-in">
-              Joining KEEM TECHNOLOGIES means being part of a team that values innovation, collaboration, and excellence. Whether you're an experienced professional or just starting your career, we offer exciting opportunities for growth and development.
-            </p>
-            <p class="fade-in">
-              With a focus on diversity, inclusivity, and continuous learning, we provide a supportive environment where you can achieve your full potential. Join us and be part of our journey to shape the future of technology.
+            <p class="hero-text">
+              Live in New York, New Jerset and Connecticut!
             </p>
           </div>
-          <div class="text-start small_text">
-            <p style="font-size: 20px" class="fade-in">
-              Ready to take the next step in your technology career? Explore our current openings and start your journey with JWOJWO TECHNOLOGIES today.
-            </p>
-            <p style="color: orangered; font-size: 22px" class="fade-in">
-              Join our team and be at the forefront of innovation in the technology industry.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
 
-    <!-- end of "why choose KEEM technologies" -->
+          <div class="hero-banner"></div>
 
-    <section class="container-fluid p-3 col-sm-12 " style="color: orangered">
-      <h2 class="text-center text00">
-        Featured Technologies and Solutions
-      </h2>
-      <div class="image_div p-2 mt-4 gap-4 mb-6">
-        <div class="d-flex justify-content-center ">
-          <img class="img-fluid img2" src="./pictures/icon 1.jpg" alt="Web Development" />
-        </div>
-        <div class="d-flex justify-content-center">
-          <img class="img-fluid img2" src="./pictures/icon 2.jpg" alt="Software Development" />
-        </div>
-        <div class="d-flex justify-content-center">
-          <img class="img-fluid img2" src="./pictures/icon 3.jpg" alt="IT Consulting" />
-        </div>
-        <div class="d-flex justify-content-center">
-          <img class="img-fluid img2" src="./pictures/icon 4.jpg" alt="Cloud Computing" />
-        </div>
-        <div class="d-flex justify-content-center">
-          <img class="img-fluid img2" src="./pictures/icon 5.jpg" alt="Data Analytics" />
-        </div>
-        <div class="d-flex justify-content-center">
-          <img class="img-fluid img2" src="./pictures/icon 3.jpg" alt="Data Analytics" />
-        </div>
-        <div class="d-flex justify-content-center">
-          <img class="img-fluid img2" src="./pictures/icon 5.jpg" alt="Data Analytics" />
-        </div>
-        <div class="d-flex justify-content-center">
-          <img class="img-fluid img2" src="./pictures/icon 6.jpg" alt="Cyber Security" />
-        </div>
-      </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section class="container-fluid applySection pb-5" id="contact">
-      <div class="container text-white">
-        <div class="row">
-          <div class="col-md-6 col-sm-10 p-5 gap-2 d-flex flex-column justify-content-center">
-            <h2 class="text-center fw-bold" style="color: orangered">CONTACT US</h2>
-            <form class="mb-4 d-flex flex-column gap-3 small_text" style="font-size: 20px"  id="myForm" onsubmit="handleFormSubmit(event)">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter your first Name" required />
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="secondName">Last Name</label>
-                    <input type="text" id="secondName" name="secondName" placeholder="Enter your last Name" class="form-control" required />
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="user-email">E-mail</label>
-                <input type="email" id="user-email" name="user-email" placeholder="Email Address" class="form-control" required />
-              </div>
-              <div class="row mb-4">
-                <div class="col-sm-3">
-                  <div class="form-group">
-                    <label for="country-code">Country</label>
-                    <input type="text" id="country-code" name="country-code" placeholder="Country-code" class="form-control" required />
-                  </div>
-                </div>
-                <div class="col-sm-9">
-                  <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="number" id="phone" name="phone" placeholder="Phone Number" class="form-control" required />
-                  </div>
-                </div>
-              </div>
-             <a href="./thankyou.html"> <button class="btn align-self-center" type="submit" style="width: 200px; background-color: orangered; color: #fff">Submit</button></a>
-            </form>
-          </div>
-          <div class="encouragement00 col-md-6 col-sm-10 p-5 text-center d-flex align-items-center">
-            <span class="paragragh_black font-italic text-white paragraph_slide fw-bold encouragement" style="font-size: 50px; line-height: 1.1">
-              "LET'S BUILD THE FUTURE TOGETHER WITH KEEM TECHNOLOGIES!"
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Footer Section -->
-    <section class="container-fluid footer d-flex flex-column align-items-center justify-content-center bg-dark" id="footer">
-      <div class="container div_footer row d-flex justify-content-between mt-2 pt-3 pb-3">
-        <div class="odyssey_footer col-4 d-flex flex-column gap-2 justify-content-around" id="odyssey">
-          <h3 class="fw-bold"  style="color: orangered">KEEM TECHNOLOGIES</h3>
-          <ul class="text-start small_text">
-            <li style="font-size: 20px" class="text-white">Located at kawempe </li>
-            <li style="font-size: 20px" class="text-white">We're here to revolutionize technology.</li>
-            <li style="font-size: 20px" class="text-white">Working Hours: 24/7</li>
-          </ul>
-        </div>
-        <div class="contact_footer col-4 text-center d-flex flex-column gap-1 justify-content-around">
-          <h3 class="fw-bold"  style="color: orangered">CONTACT US</h3>
-          <p style="font-size: 20px" class="small_text text-white">
-            <span>TEL: +256 751424275</span>&nbsp;
-          </p>
-          <p style="font-size: 20px" class="small_text text-white">
-            <span>EMAIL:</span>&nbsp;<span>info@keem.com</span>
-          </p>
-          <div class="d-flex justify-content-evenly">
-            <a href="#" class="text-decoration-none">
-              <i class="fab fa-instagram text-decoration-none" style="font-size: 20px; color: orangered"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <i class="fab fa-facebook text-decoration-none" style="font-size: 20px; color: orangered"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <i class="fab fa-twitter text-decoration-none" style="font-size: 20px; color: orangered"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <i class="fab fa-linkedin text-decoration-none" style="font-size: 20px; color: orangered"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <i class="fab fa-youtube text-decoration-none" style="font-size: 20px; color: orangered"></i>
-            </a>
-          </div>
-        </div>
-        <div class="faqs_footer col-4 d-flex text-center gap-2 justify-content-around">
-          <div>
-            <a href="#"> <h3 class="fw-bold" style="color: orangered">FAQS</h3></a>
-            
-           
-            <div id="information">
-              <!-- Additional information will be displayed here -->
-              <ul class="text-start small_text" style="font-size: 18px">
-                <li class="text-white" onclick="showInformation('private')">Is KEEM TECHNOLOGIES a private company?</li>
-                <li class="text-white" onclick="showInformation('location')">Where is KEEM TECHNOLOGIES located?</li>
-                <li class="text-white" onclick="showInformation('cost')">Are the services provided by KEEM TECHNOLOGIES free or paid?</li>
-              </ul>
+          <form action="" class="hero-form">
+
+            <div class="input-wrapper">
+              <label for="input-1" class="input-label">Car, model, or brand</label>
+
+              <input type="text" name="car-model" id="input-1" class="input-field"
+                placeholder="What car are you looking?">
             </div>
-          </div>
-          <a href="#">
-            <i class="fas fa-home align-self-center" style="font-size: 40px; color: orangered"></i>
-          </a>
+
+            <div class="input-wrapper">
+              <label for="input-2" class="input-label">Max. monthly payment</label>
+
+              <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Add an amount in $">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="input-3" class="input-label">Make Year</label>
+
+              <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
+            </div>
+
+            <button  type="submit" class="btn">Search</button>
+
+          </form>
+
         </div>
-        <p class="text-center mb-0 mt-4 small_text text-white" style="font-size: 20px">
-          Copyright©2024 KEEM TECHNOLOGIES. All rights reserved.
-        </p>
+      </section>
+
+
+      <section class="section featured-car" id="featured-car">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Featured cars</h2>
+
+            <a href="#" class="featured-car-link">
+              <span>View more</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="featured-car-list">
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-1.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Toyota RAV4</a>
+                    </h3>
+
+                    <data class="year" value="2021">2021</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Hybrid</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">6.1km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$440</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button  class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-2.jpg" alt="BMW 3 Series 2019" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">BMW 3 Series</a>
+                    </h3>
+
+                    <data class="year" value="2019">2019</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Gasoline</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">8.2km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$350</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-3.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Volkswagen T-Cross</a>
+                    </h3>
+
+                    <data class="year" value="2020">2020</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Gasoline</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">5.3km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$400</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-4.jpg" alt="Cadillac Escalade 2020" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Cadillac Escalade</a>
+                    </h3>
+
+                    <data class="year" value="2020">2020</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Gasoline</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7.7km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$620</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button href="signup.css" class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-5.jpg" alt="BMW 4 Series GTI 2021" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">BMW 4 Series GTI</a>
+                    </h3>
+
+                    <data class="year" value="2021">2021</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Gasoline</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7.6km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$530</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-6.jpg" alt="BMW 4 Series 2019" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">BMW 4 Series</a>
+                    </h3>
+
+                    <data class="year" value="2019">2019</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Gasoline</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7.2km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>$490</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section get-start">
+        <div class="container">
+
+          <h2 class="h2 section-title">Get started with 4 simple steps</h2>
+
+          <ul class="get-start-list">
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-1">
+                  <ion-icon name="person-add-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Create a profile</h3>
+
+                <p class="card-text">
+                  If you are going to use a passage of Lorem Ipsum, you need to be sure.
+                </p>
+
+                <a href="#" class="card-link">Get started</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-2">
+                  <ion-icon name="car-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Tell us what car you want</h3>
+
+                <p class="card-text">
+                  Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-3">
+                  <ion-icon name="person-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Match with seller</h3>
+
+                <p class="card-text">
+                  It to make a type specimen book. It has survived not only five centuries, but also the leap into
+                  electronic
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-4">
+                  <ion-icon name="card-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Make a deal</h3>
+
+                <p class="card-text">
+                  There are many variations of passages of Lorem available, but the majority have suffered alteration
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">Our Blog</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" alt="Opening of new offices of the company" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Company</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Opening of new offices of the company</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">January 14, 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" alt="What cars are most vulnerable" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Repair</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">What cars are most vulnerable</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">January 14, 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" alt="Statistics showed which average age" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Cars</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Statistics showed which average age</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">January 14, 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-4.jpg" alt="What´s required when renting a car?" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Cars</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">What´s required when renting a car?</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">January 14, 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-5.jpg" alt="New rules for handling our cars" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Company</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">New rules for handling our cars</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">January 14, 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Ridex logo">
+          </a>
+
+          <p class="footer-text">
+            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
+            consumers an
+            attractive and fun selection.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing plans</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacts</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ask a question</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Neighborhoods in New York</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Manhattan</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Central New York City</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Upper East Side</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Queens</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Theater District</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Midtown</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">SoHo</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chelsea</a>
+          </li>
+
+        </ul>
+
       </div>
-      
-    </section>
-    
-  </body>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
